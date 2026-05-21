@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.KampanyalarController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0">
+         <image>
+            <Image url="@img/arkaplanbos.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="773.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="475.0" layoutY="140.0" style="-fx-font-family: &quot;Georgia&quot;; -fx-text-fill: #3b2416; -fx-font-weight: bold;" text="Kampanyalarımız">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="132.0" fitWidth="349.0" layoutX="466.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/çizgisüs.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="439.0" layoutY="202.0" style="-fx-font-family: &quot;Georgia&quot;; -fx-text-fill: #6f5646; -fx-font-weight: bold;" text="Size özel fırsatları kaçırmayın, güzelliğinize değer katın.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Pane layoutX="115.0" layoutY="245.0" prefHeight="360.0" prefWidth="250.0" style="-fx-background-color: rgba(255,248,240,0.80); -fx-border-width: 1.5; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #d4a24c;">
+         <children>
+            <ImageView fitHeight="170.0" fitWidth="247.0" layoutX="2.0" layoutY="2.0">
+               <image>
+                  <Image url="@img/kampanyalarciltbakım.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Label layoutX="40.0" layoutY="180.0" prefHeight="25.0" prefWidth="171.0" text="Cilt Bakımı Paketi" textFill="#3b2416">
+               <font>
+                  <Font name="Georgia Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="213.0" layoutX="19.0" layoutY="206.0">
+               <image>
+                  <Image url="@img/çizgisüs.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="1.0" layoutY="218.0" prefHeight="58.0" prefWidth="248.0" style="-fx-font-family: &quot;Georgia&quot;;" text="Cildinize özel bakım uygulamaları ile canlı ve sağlıklı bir görünüm kazanın." textAlignment="CENTER" textFill="#3b2416" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="115.0" layoutY="270.0" style="-fx-text-fill: #d4a24c; -fx-font-family: &quot;Georgia&quot;;" text="₺3200">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Text layoutX="40.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-strikethrough: true; -fx-font-family: &quot;Georgia&quot;;" text="₺4000" wrappingWidth="66.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button layoutX="60.0" layoutY="315.0" mnemonicParsing="false" onAction="#detayCiltBakimi" style="-fx-background-color: linear-gradient(to right,#d7a447,#c98b2e); -fx-background-radius: 25; -fx-text-fill: white; -fx-font-family: &quot;Georgia&quot;; -fx-font-size: 15px;" text="Detayları İncele" />
+         </children>
+      </Pane>
+      <Pane layoutX="665.0" layoutY="245.0" prefHeight="360.0" prefWidth="250.0" style="-fx-background-color: rgba(255,248,240,0.80); -fx-border-width: 1.5; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #d4a24c;">
+         <children>
+            <ImageView fitHeight="170.0" fitWidth="247.0" layoutX="2.0" layoutY="2.0">
+               <image>
+                  <Image url="@img/kampanyalarkaskirpik-removebg-preview.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Label layoutX="33.0" layoutY="180.0" prefHeight="25.0" prefWidth="185.0" text="Kaş &amp; Kirpik Paketi" textFill="#3b2416">
+               <font>
+                  <Font name="Georgia Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="213.0" layoutX="19.0" layoutY="206.0">
+               <image>
+                  <Image url="@img/çizgisüs.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="1.0" layoutY="218.0" prefHeight="58.0" prefWidth="248.0" style="-fx-font-family: &quot;Georgia&quot;;" text="Daha belirgin bakışlar için kaş tasarımı, lifting ve kirpik uygulamalarında fırsat." textAlignment="CENTER" textFill="#3b2416" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="116.0" layoutY="267.0" style="-fx-text-fill: #d4a24c; -fx-font-family: &quot;Georgia&quot;;" text="₺3750">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Text layoutX="50.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-strikethrough: true; -fx-font-family: &quot;Georgia&quot;;" text="₺5000" wrappingWidth="66.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button layoutX="60.0" layoutY="315.0" mnemonicParsing="false" onAction="#detayKasKirpik" style="-fx-background-color: linear-gradient(to right,#d7a447,#c98b2e); -fx-background-radius: 25; -fx-text-fill: white; -fx-font-family: &quot;Georgia&quot;; -fx-font-size: 15px;" text="Detayları İncele" />
+         </children>
+      </Pane>
+      <Pane layoutX="390.0" layoutY="245.0" prefHeight="360.0" prefWidth="250.0" style="-fx-background-color: rgba(255,248,240,0.80); -fx-border-width: 1.5; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #d4a24c;">
+         <children>
+            <Label layoutX="20.0" layoutY="171.0" prefHeight="48.0" prefWidth="213.0" text="Lazer Epilasyon Paketi" textAlignment="CENTER" textFill="#3b2416" wrapText="true">
+               <font>
+                  <Font name="Georgia Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="213.0" layoutX="20.0" layoutY="207.0">
+               <image>
+                  <Image url="@img/çizgisüs.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="2.0" layoutY="219.0" prefHeight="58.0" prefWidth="248.0" style="-fx-font-family: &quot;Georgia&quot;;" text="Pürüzsüz bir cilt için bikini, koltuk altı ve bacak bölgesinde geçerli fırsat." textAlignment="CENTER" textFill="#3b2416" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="170.0" fitWidth="247.0" layoutX="2.0" layoutY="2.0">
+               <image>
+                  <Image url="@img/kampanyalarlazerepilasyon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="104.0" layoutY="264.0" style="-fx-text-fill: #d4a24c; -fx-font-family: &quot;Georgia&quot;;" text="₺10500">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Text layoutX="38.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-strikethrough: true; -fx-font-family: &quot;Georgia&quot;;" text="₺15000" wrappingWidth="66.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button layoutX="60.0" layoutY="315.0" mnemonicParsing="false" onAction="#detayLazerEpilasyon" style="-fx-background-color: linear-gradient(to right,#d7a447,#c98b2e); -fx-background-radius: 25; -fx-text-fill: white; -fx-font-family: &quot;Georgia&quot;; -fx-font-size: 15px;" text="Detayları İncele" />
+         </children>
+      </Pane>
+      <Pane layoutX="940.0" layoutY="245.0" prefHeight="360.0" prefWidth="250.0" style="-fx-background-color: rgba(255,248,240,0.80); -fx-border-width: 1.5; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #d4a24c;">
+         <children>
+            <ImageView fitHeight="170.0" fitWidth="247.0" layoutX="2.0" layoutY="2.0">
+               <image>
+                  <Image url="@img/kampanyalarbölgeselincelmelogo.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Label layoutX="13.0" layoutY="180.0" prefHeight="25.0" prefWidth="224.0" text="Bölgesel İncelme Paketi" textFill="#3b2416">
+               <font>
+                  <Font name="Georgia Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="213.0" layoutX="19.0" layoutY="206.0">
+               <image>
+                  <Image url="@img/çizgisüs.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="1.0" layoutY="218.0" prefHeight="58.0" prefWidth="248.0" style="-fx-font-family: &quot;Georgia&quot;;" text="Sıkılaşma ve incelme uygulamalarında özel kampanya fırsatı." textAlignment="CENTER" textFill="#3b2416" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="110.0" layoutY="268.0" style="-fx-text-fill: #d4a24c; -fx-font-family: &quot;Georgia&quot;;" text="₺13600">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Text layoutX="28.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-strikethrough: true; -fx-font-family: &quot;Georgia&quot;;" text="₺16000" wrappingWidth="66.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button layoutX="60.0" layoutY="315.0" mnemonicParsing="false" onAction="#detayBolgeselIncelme" style="-fx-background-color: linear-gradient(to right,#d7a447,#c98b2e); -fx-background-radius: 25; -fx-text-fill: white; -fx-font-family: &quot;Georgia&quot;; -fx-font-size: 15px;" text="Detayları İncele" />
+         </children>
+      </Pane>
+      <Label layoutX="294.0" layoutY="646.0" style="-fx-font-family: &quot;Georgia&quot;; -fx-text-fill: #6f5646; -fx-font-weight: bold;" text="Kampanyalarımız belirli sürelerle sınırlıdır,  başka indirimlerle birleştirilemez. ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="75.0" fitWidth="470.0" layoutX="405.0" layoutY="667.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/çizgisüs.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="15.0" layoutY="10.0" prefHeight="117.0" prefWidth="1250.0" style="-fx-background-color: rgba(255,255,255,0.75); -fx-padding: 20; -fx-alignment: CENTER_LEFT; -fx-border-radius: 20; -fx-border-color: #d8b06a; -fx-background-radius: 20;">
+         <children>
+            <ImageView fitHeight="95.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/linalogo2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="9.0" fitWidth="11.0" pickOnBounds="true" preserveRatio="true" />
+            <Separator layoutX="245.0" layoutY="31.0" orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openAnaSayfa" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text=" AnaSayfa" />
+            <Separator orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openRandevu" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="Randevu " />
+            <Separator orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openIletisim" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="İletişim" />
+            <Separator orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openFiyat" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="Fiyat" />
+            <Separator layoutX="499.0" layoutY="31.0" orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openIslemler" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="İşlemler" />
+            <Separator layoutX="498.0" layoutY="31.0" orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openKampanyalar" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="Kampanyalar" />
+            <Separator layoutX="501.0" layoutY="31.0" orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openCiltTesti" prefHeight="55.0" prefWidth="120.0" styleClass="menu-button" stylesheets="@application.css" text="Cilt Testi" textAlignment="CENTER" />
+            <Separator layoutX="504.0" layoutY="31.0" orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openSSS" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="SSS" />
+            <Separator orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openHakkimizda" prefHeight="55.0" prefWidth="120.0" styleClass="menu-button" stylesheets="@application.css" text="Hakkımızda" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

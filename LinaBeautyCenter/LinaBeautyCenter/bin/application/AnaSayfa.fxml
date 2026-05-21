@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AnaSayfaController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0">
+         <image>
+            <Image url="@img/arkaplan.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="142.0" layoutY="167.0" prefHeight="326.0" prefWidth="498.0" spacing="20.0">
+         <children>
+            <Label prefHeight="43.0" prefWidth="268.0" style="-fx-text-fill: #b68642;" text="Lina Güzellik Merkezi">
+               <font>
+                  <Font name="BrushScriptStd" size="28.0" />
+               </font>
+            </Label>
+            <Label prefHeight="112.0" prefWidth="499.0" style="-fx-text-fill: #3e2415;" text="Işıltını                          Ortaya Çıkar" wrapText="true">
+               <font>
+                  <Font name="Georgia Bold" size="48.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="55.0" fitWidth="499.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/çizgisüs.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="68.0" prefWidth="520.0" style="-fx-text-fill: #6c5242;" text="Cilt bakımı, güzellik ve kişisel bakım hizmetleriyle kendini özel hisset." wrapText="true">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="kullaniciGirisButton" layoutX="153.0" layoutY="521.0" mnemonicParsing="false" onAction="#openKullaniciGiris" prefHeight="41.0" prefWidth="239.0" style="-fx-background-color: #d4a24c; -fx-text-fill: white; -fx-font-size: 18; -fx-background-radius: 40; -fx-padding: 14 35 14 35;" text="Kullanıcı Giriş " />
+      <Button fx:id="adminGirisButton" layoutX="425.0" layoutY="520.0" mnemonicParsing="false" onAction="#openAdminGiris" prefHeight="41.0" prefWidth="239.0" style="-fx-background-color: transparent; -fx-text-fill: #6d4a2f; -fx-border-radius: 40; -fx-border-color: #d4a24c; -fx-font-size: 18; -fx-background-radius: 40; -fx-padding: 14 35 14 35;" text="Admin Giriş" />
+      <HBox layoutX="15.0" layoutY="611.0" prefHeight="90.0" prefWidth="1250.0" style="-fx-background-color: rgba(255,255,255,0.75); -fx-padding: 20; -fx-alignment: CENTER_LEFT; -fx-border-radius: 20; -fx-border-color: #d8b06a; -fx-background-radius: 20;">
+         <children>
+            <StackPane prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #fffaf4; -fx-background-radius: 100; -fx-border-radius: 100;">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0">
+                     <image>
+                        <Image url="@img/uzmankadro.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="10.0" layoutY="10.0">
+                     <image>
+                        <Image url="@img/uzmankadro.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="10.0" layoutY="10.0">
+                     <image>
+                        <Image url="@img/uzmankadro.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <ImageView fitHeight="9.0" fitWidth="11.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox prefHeight="60.0" prefWidth="155.0" spacing="5.0">
+               <children>
+                  <Label style="-fx-font-family: &quot;Georgia&quot;; -fx-text-fill: #5a3d2b;" text="Uzman Kadro">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label text="Alanında uzman profesyoneller" textFill="#8a6f5c" wrapText="true" />
+               </children>
+            </VBox>
+            <Pane prefHeight="70.0" prefWidth="1.0" style="-fx-background-color: rgba(180,150,120,0.35);" />
+            <ImageView fitHeight="9.0" fitWidth="11.0" layoutX="91.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+            <StackPane layoutX="31.0" layoutY="31.0" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #fffaf4; -fx-background-radius: 100; -fx-border-radius: 100;">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0">
+                     <image>
+                        <Image url="@img/uzmankadro.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="10.0" layoutY="10.0">
+                     <image>
+                        <Image url="@img/uzmankadro.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="10.0" layoutY="10.0">
+                     <image>
+                        <Image url="@img/işlemlerimizlogo(altın).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <ImageView fitHeight="9.0" fitWidth="11.0" layoutX="214.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox layoutX="102.0" layoutY="31.0" prefHeight="60.0" prefWidth="167.0" spacing="5.0">
+               <children>
+                  <Label style="-fx-font-family: &quot;Georgia&quot;; -fx-text-fill: #5a3d2b;" text="Kaliteli Ürünler">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="19.0" prefWidth="156.0" text="Cildinize en iyisini sunuyoruz" textFill="#8a6f5c" wrapText="true" />
+               </children>
+            </VBox>
+            <Pane prefHeight="70.0" prefWidth="1.0" style="-fx-background-color: rgba(180,150,120,0.35);" />
+            <ImageView fitHeight="9.0" fitWidth="11.0" layoutX="285.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+            <StackPane layoutX="225.0" layoutY="31.0" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #fffaf4; -fx-background-radius: 100; -fx-border-radius: 100;">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0">
+                     <image>
+                        <Image url="@img/uzmankadro.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="10.0" layoutY="10.0">
+                     <image>
+                        <Image url="@img/uzmankadro.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="10.0" layoutY="10.0">
+                     <image>
+                        <Image url="@img/hijyeniklogo(altın).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <ImageView fitHeight="9.0" fitWidth="11.0" layoutX="408.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox layoutX="296.0" layoutY="31.0" prefHeight="60.0" prefWidth="155.0" spacing="5.0">
+               <children>
+                  <Label style="-fx-font-family: &quot;Georgia&quot;; -fx-text-fill: #5a3d2b;" text="Hijyenik Ortam">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label text="Sağlığınız bizim önceliğimiz" textFill="#8a6f5c" wrapText="true" />
+               </children>
+            </VBox>
+            <Pane layoutX="507.0" layoutY="31.0" prefHeight="70.0" prefWidth="1.0" style="-fx-background-color: rgba(180,150,120,0.35);" />
+            <ImageView fitHeight="9.0" fitWidth="11.0" layoutX="479.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+            <StackPane layoutX="31.0" layoutY="31.0" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #fffaf4; -fx-background-radius: 100; -fx-border-radius: 100;">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0">
+                     <image>
+                        <Image url="@img/uzmankadro.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="10.0" layoutY="10.0">
+                     <image>
+                        <Image url="@img/uzmankadro.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="10.0" layoutY="10.0">
+                     <image>
+                        <Image url="@img/kampanyalarlogo(altın).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <ImageView fitHeight="9.0" fitWidth="11.0" layoutX="602.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox layoutX="490.0" layoutY="31.0" prefHeight="60.0" prefWidth="162.0" spacing="5.0">
+               <children>
+                  <Label style="-fx-font-family: &quot;Georgia&quot;; -fx-text-fill: #5a3d2b;" text="Özel Kampanyalar">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label text="Avantajlı fırsatları kaçırmayın" textFill="#8a6f5c" wrapText="true" />
+               </children>
+            </VBox>
+            <Pane prefHeight="70.0" prefWidth="1.0" style="-fx-background-color: rgba(180,150,120,0.35);" />
+            <ImageView fitHeight="9.0" fitWidth="11.0" layoutX="673.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+            <StackPane layoutX="613.0" layoutY="31.0" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #fffaf4; -fx-background-radius: 100; -fx-border-radius: 100;">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0">
+                     <image>
+                        <Image url="@img/uzmankadro.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="10.0" layoutY="10.0">
+                     <image>
+                        <Image url="@img/uzmankadro.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="10.0" layoutY="10.0">
+                     <image>
+                        <Image url="@img/memnuniyetlogo(altın).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <ImageView fitHeight="9.0" fitWidth="11.0" layoutX="802.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox layoutX="684.0" layoutY="31.0" prefHeight="60.0" prefWidth="155.0" spacing="5.0">
+               <children>
+                  <Label style="-fx-font-family: &quot;Georgia&quot;; -fx-text-fill: #5a3d2b;" text="\%100 Memnuniyet">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label text="Mutlu müşteriler, güçlü güven" textFill="#8a6f5c" wrapText="true" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="15.0" layoutY="10.0" prefHeight="117.0" prefWidth="1250.0" style="-fx-background-color: rgba(255,255,255,0.75); -fx-padding: 20; -fx-alignment: CENTER_LEFT; -fx-border-radius: 20; -fx-border-color: #d8b06a; -fx-background-radius: 20;">
+         <children>
+            <ImageView fitHeight="95.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/linalogo2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="9.0" fitWidth="11.0" pickOnBounds="true" preserveRatio="true" />
+            <Separator layoutX="245.0" layoutY="31.0" orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openAnaSayfa" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text=" AnaSayfa" />
+            <Separator orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openRandevu" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="Randevu " />
+            <Separator orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openIletisim" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="İletişim" />
+            <Separator orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openFiyat" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="Fiyat" />
+            <Separator layoutX="499.0" layoutY="31.0" orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openIslemler" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="İşlemler" />
+            <Separator layoutX="498.0" layoutY="31.0" orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openKampanyalar" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="Kampanyalar" />
+            <Separator layoutX="501.0" layoutY="31.0" orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openCiltTesti" prefHeight="55.0" prefWidth="120.0" styleClass="menu-button" stylesheets="@application.css" text="Cilt Testi" textAlignment="CENTER" />
+            <Separator layoutX="504.0" layoutY="31.0" orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openSSS" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="SSS" />
+            <Separator orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openHakkimizda" prefHeight="55.0" prefWidth="120.0" styleClass="menu-button" stylesheets="@application.css" text="Hakkımızda" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

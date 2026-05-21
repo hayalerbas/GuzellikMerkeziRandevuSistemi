@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.KullaniciPanelController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0">
+         <image>
+            <Image url="@img/Adminpanel.PNG" />
+         </image>
+      </ImageView>
+      <Pane layoutX="35.0" layoutY="15.0" prefHeight="558.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="anaSayfaButton" layoutY="200.0" mnemonicParsing="false" onAction="#panelimGoster" prefHeight="25.0" prefWidth="200.0" style="-fx-font-family: &quot;Segoe UI&quot;; -fx-alignment: CENTER_LEFT; -fx-cursor: hand; -fx-font-size: 17px; -fx-padding: 0 0 0 28; -fx-background-color: transparent;" text="🏠  Ana sayfa" textFill="#633521aa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="randevuAlMenuButton" layoutY="240.0" mnemonicParsing="false" onAction="#randevuAlAc" prefHeight="25.0" prefWidth="200.0" style="-fx-font-family: &quot;Segoe UI&quot;; -fx-alignment: CENTER_LEFT; -fx-cursor: hand; -fx-font-size: 17px; -fx-padding: 0 0 0 28; -fx-background-color: transparent;" text="📅  Randevu Al" textFill="#633521aa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="randevularimMenuButton" layoutY="280.0" mnemonicParsing="false" onAction="#randevularimiAc" prefHeight="25.0" prefWidth="200.0" style="-fx-font-family: &quot;Segoe UI&quot;; -fx-alignment: CENTER_LEFT; -fx-cursor: hand; -fx-font-size: 17px; -fx-padding: 0 0 0 28; -fx-background-color: transparent;" text="🕒  Randevularım" textFill="#633521aa" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="profilMenuButton" layoutY="320.0" mnemonicParsing="false" onAction="#profilBilgileriAc" prefHeight="25.0" prefWidth="200.0" style="-fx-font-family: &quot;Segoe UI&quot;; -fx-alignment: CENTER_LEFT; -fx-cursor: hand; -fx-font-size: 17px; -fx-padding: 0 0 0 28; -fx-background-color: transparent;" text="👤  Profil Bilgileri" textFill="#633521aa" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="cikisButton" layoutY="400.0" mnemonicParsing="false" onAction="#cikisYap" prefHeight="25.0" prefWidth="200.0" style="-fx-font-family: &quot;Segoe UI&quot;; -fx-alignment: CENTER_LEFT; -fx-cursor: hand; -fx-font-size: 17px; -fx-padding: 0 0 0 28; -fx-background-color: transparent;" text="↩  Çıkış Yap" textFill="#633521aa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/linalogo2.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="-10.0" layoutY="118.0" prefHeight="35.0" prefWidth="200.0" style="-fx-alignment: center;" text="LINA" textAlignment="CENTER" textFill="#b8852e">
+               <font>
+                  <Font name="Georgia Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="-2.0" layoutY="153.0" prefHeight="23.0" prefWidth="185.0" style="-fx-alignment: center;" text="BEAUTY CENTER" textAlignment="CENTER" textFill="#b8852e">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="mesajlarButton" layoutY="360.0" mnemonicParsing="false" onAction="#mesajlarGoster" prefHeight="22.0" prefWidth="200.0" style="-fx-font-family: &quot;Segoe UI&quot;; -fx-alignment: CENTER_LEFT; -fx-cursor: hand; -fx-font-size: 17px; -fx-padding: 0 0 0 28; -fx-background-color: transparent;" text="✉  Mesajlar" textFill="#633521aa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="280.0" layoutY="20.0" prefHeight="79.0" prefWidth="530.0">
+         <children>
+            <Line endX="-100.0" endY="65.0" layoutX="114.0" layoutY="8.0" startX="-100.0" startY="5.0" stroke="#b8852e" />
+            <Label layoutX="23.0" layoutY="49.0" prefHeight="25.0" prefWidth="430.0" text="Randevularınızı buradan kolayca yönetebilirsiniz." textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="hosgeldinizLabel" layoutX="23.0" layoutY="13.0" prefHeight="45.0" prefWidth="397.0" text="..." textFill="#613421ab">
+               <font>
+                  <Font name="Georgia" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="280.0" layoutY="150.0" prefHeight="189.0" prefWidth="290.0" style="-fx-background-color: rgba(255,255,255,0.86); -fx-border-color: #ead8bd; -fx-background-radius: 24; -fx-border-width: 3; -fx-effect: dropshadow(gaussian, rgba(80,50,20,0.06), 16,0,0,4); -fx-border-radius: 24;">
+         <children>
+            <Label layoutX="14.0" layoutY="22.0" prefHeight="55.0" prefWidth="55.0" style="-fx-alignment: center; -fx-background-radius: 30; -fx-text-fill: #c9952f; -fx-background-color: rgba(217,163,61,0.15);" text="📅" textAlignment="CENTER" textFill="#c79230af">
+               <font>
+                  <Font name="Georgia" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="24.0" prefHeight="25.0" prefWidth="163.0" style="-fx-alignment: center;" text="Yaklaşan Randevum" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="yaklasanHizmetLabel" layoutX="82.0" layoutY="59.0" prefHeight="19.0" prefWidth="163.0" text="Cilt Bakımı" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Label>
+            <HBox layoutX="38.0" layoutY="111.0" prefHeight="18.0" prefWidth="217.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="25.0" style="-fx-alignment: center;" text="📅" textAlignment="CENTER" textFill="#613421ab">
+                     <font>
+                        <Font name="Georgia" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="yaklasanTarihLabel" prefHeight="17.0" prefWidth="119.0" style="-fx-alignment: center;" text="8 temmuz 2026" textAlignment="CENTER" textFill="#613421ab">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="35.0" prefWidth="27.0">
+                     <children>
+                        <Label prefHeight="19.0" prefWidth="25.0" style="-fx-alignment: center;" text="🕒" textAlignment="CENTER" textFill="#613421ab">
+                           <font>
+                              <Font name="Georgia" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="yaklasanSaatLabel" prefHeight="18.0" prefWidth="43.0" style="-fx-alignment: center;" text=" 10:45" textAlignment="CENTER" textFill="#613421ab">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Line endX="13.0" layoutX="250.0" layoutY="51.0" startX="-168.0" stroke="#b8852e" />
+            <Label layoutX="82.0" layoutY="84.0" prefHeight="19.0" prefWidth="58.0" text="Uzman:" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="yaklasanUzmanLabel" layoutX="140.0" layoutY="84.0" prefHeight="19.0" prefWidth="130.0" text="..." textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="yaklasanDetayButton" layoutX="31.0" layoutY="140.0" mnemonicParsing="false" onAction="#randevularimiAc" prefHeight="35.0" prefWidth="230.0" style="-fx-background-color: transparent; -fx-background-radius: 14; -fx-border-radius: 14; -fx-border-color: #d9a33d;" text="Detayları Gör  &gt;" textFill="#9a6518">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="950.0" layoutY="150.0" prefHeight="189.0" prefWidth="290.0" style="-fx-background-color: rgba(255,255,255,0.86); -fx-border-color: #ead8bd; -fx-background-radius: 24; -fx-border-width: 3; -fx-effect: dropshadow(gaussian, rgba(80,50,20,0.06), 16,0,0,4); -fx-border-radius: 24;">
+         <children>
+            <Label layoutX="14.0" layoutY="22.0" prefHeight="55.0" prefWidth="55.0" style="-fx-alignment: center; -fx-background-radius: 30; -fx-text-fill: #c9952f; -fx-background-color: rgba(217,163,61,0.15);" text="👤" textAlignment="CENTER" textFill="#c79230af">
+               <font>
+                  <Font name="Georgia" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="24.0" prefHeight="25.0" prefWidth="142.0" style="-fx-alignment: center;" text="Profil Bilgilerim" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Line endX="13.0" layoutX="250.0" layoutY="51.0" startX="-168.0" stroke="#b8852e" />
+            <Button fx:id="profilGoruntuleButton" layoutX="31.0" layoutY="140.0" mnemonicParsing="false" onAction="#profilBilgileriAc" prefHeight="35.0" prefWidth="230.0" style="-fx-background-color: transparent; -fx-background-radius: 14; -fx-border-radius: 14; -fx-border-color: #d9a33d;" text="Profilimi Görüntüle &gt;" textFill="#9a6518">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="profilAdSoyadLabel" layoutX="82.0" layoutY="58.0" prefHeight="19.0" prefWidth="163.0" text="..." textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="83.0" prefHeight="18.0" prefWidth="25.0" text="✉" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="profilEmailLabel" layoutX="103.0" layoutY="86.0" prefHeight="7.0" prefWidth="163.0" text="..." textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="113.0" prefHeight="19.0" prefWidth="17.0" text="☎" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="profilTelefonLabel" layoutX="103.0" layoutY="114.0" prefHeight="8.0" prefWidth="101.0" text="..." textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="268.0" layoutY="376.0" prefHeight="79.0" prefWidth="530.0">
+         <children>
+            <Line endX="-100.0" endY="65.0" layoutX="114.0" layoutY="8.0" startX="-100.0" startY="5.0" stroke="#b8852e" />
+            <Label layoutX="23.0" layoutY="49.0" prefHeight="25.0" prefWidth="500.0" text=" Randevularınızı yönetmek için aşağıdaki işlemleri kullanabilirsiniz." textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="13.0" prefHeight="45.0" prefWidth="274.0" style="-fx-alignment: center;" text="Hızlı İşlemler ✦" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Georgia" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="280.0" layoutY="480.0" prefHeight="226.0" prefWidth="290.0" style="-fx-background-color: rgba(255,255,255,0.86); -fx-border-color: #ead8bd; -fx-background-radius: 24; -fx-border-width: 3; -fx-effect: dropshadow(gaussian, rgba(80,50,20,0.06), 16,0,0,4); -fx-border-radius: 24;">
+         <children>
+            <Label layoutX="118.0" layoutY="14.0" prefHeight="55.0" prefWidth="55.0" style="-fx-alignment: center; -fx-background-radius: 30; -fx-text-fill: #c9952f; -fx-background-color: rgba(217,163,61,0.15);" text="📅" textAlignment="CENTER" textFill="#c79230af">
+               <font>
+                  <Font name="Georgia" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="102.0" prefHeight="61.0" prefWidth="210.0" text="Size uygun tarih ve saat için yeni randevu oluşturun." textAlignment="CENTER" textFill="#613421ab" wrapText="true">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="yeniRandevuButton" layoutX="31.0" layoutY="174.0" mnemonicParsing="false" onAction="#randevuAlAc" prefHeight="35.0" prefWidth="230.0" style="-fx-background-color: transparent; -fx-background-radius: 14; -fx-border-radius: 14; -fx-border-color: #d9a33d;" text="Randevu Al  &gt;" textFill="#9a6518">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="95.0" layoutY="76.0" prefHeight="25.0" prefWidth="101.0" style="-fx-alignment: center;" text=" Randevu Al" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Line endX="13.0" layoutX="223.0" layoutY="101.0" startX="-168.0" stroke="#b8852e" />
+         </children>
+      </Pane>
+      <Pane layoutX="615.0" layoutY="480.0" prefHeight="226.0" prefWidth="290.0" style="-fx-background-color: rgba(255,255,255,0.86); -fx-border-color: #ead8bd; -fx-background-radius: 24; -fx-border-width: 3; -fx-effect: dropshadow(gaussian, rgba(80,50,20,0.06), 16,0,0,4); -fx-border-radius: 24;">
+         <children>
+            <Label layoutX="118.0" layoutY="14.0" prefHeight="55.0" prefWidth="55.0" style="-fx-alignment: center; -fx-background-radius: 30; -fx-text-fill: #c9952f; -fx-background-color: rgba(217,163,61,0.15);" text="🕘" textAlignment="CENTER" textFill="#c79230af">
+               <font>
+                  <Font name="Georgia" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="102.0" prefHeight="61.0" prefWidth="210.0" text="Tüm aktif, yaklaşan ve geçmiş randevularınızı görüntüleyin." textAlignment="CENTER" textFill="#613421ab" wrapText="true">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="92.0" layoutY="77.0" prefHeight="25.0" prefWidth="107.0" style="-fx-alignment: center;" text="Randevularım" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Line endX="13.0" layoutX="223.0" layoutY="101.0" startX="-168.0" stroke="#b8852e" />
+            <Button fx:id="randevularimiGorButton" layoutX="31.0" layoutY="174.0" mnemonicParsing="false" onAction="#randevularimiAc" prefHeight="35.0" prefWidth="230.0" style="-fx-background-color: transparent; -fx-background-radius: 14; -fx-border-radius: 14; -fx-border-color: #d9a33d;" text="Randevularımı Gör &gt;" textFill="#9a6518">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="950.0" layoutY="480.0" prefHeight="226.0" prefWidth="290.0" style="-fx-background-color: rgba(255,255,255,0.86); -fx-border-color: #ead8bd; -fx-background-radius: 24; -fx-border-width: 3; -fx-effect: dropshadow(gaussian, rgba(80,50,20,0.06), 16,0,0,4); -fx-border-radius: 24;">
+         <children>
+            <Label layoutX="118.0" layoutY="14.0" prefHeight="55.0" prefWidth="55.0" style="-fx-alignment: center; -fx-background-radius: 30; -fx-text-fill: #c9952f; -fx-background-color: rgba(217,163,61,0.15);" text="👤" textAlignment="CENTER" textFill="#c79230af">
+               <font>
+                  <Font name="Georgia" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="44.0" layoutY="102.0" prefHeight="61.0" prefWidth="210.0" text="Kişisel bilgilerinizi görüntüleyin ve düzenleyin." textAlignment="CENTER" textFill="#613421ab" wrapText="true">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="90.0" layoutY="76.0" prefHeight="25.0" prefWidth="119.0" style="-fx-alignment: center;" text="Profil Bilgilerim" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Line endX="13.0" layoutX="223.0" layoutY="101.0" startX="-168.0" stroke="#b8852e" />
+            <Button fx:id="profilDuzenleButton" layoutX="34.0" layoutY="170.0" mnemonicParsing="false" onAction="#profilBilgileriAc" prefHeight="35.0" prefWidth="230.0" style="-fx-background-color: transparent; -fx-background-radius: 14; -fx-border-radius: 14; -fx-border-color: #d9a33d;" text="Profilimi Düzenle &gt;" textFill="#9a6518">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="615.0" layoutY="150.0" prefHeight="189.0" prefWidth="290.0" style="-fx-background-color: rgba(255,255,255,0.86); -fx-border-color: #ead8bd; -fx-background-radius: 24; -fx-border-width: 3; -fx-effect: dropshadow(gaussian, rgba(80,50,20,0.06), 16,0,0,4); -fx-border-radius: 24;">
+         <children>
+            <Label layoutX="14.0" layoutY="22.0" prefHeight="55.0" prefWidth="55.0" style="-fx-alignment: center; -fx-background-radius: 30; -fx-text-fill: #c9952f; -fx-background-color: rgba(217,163,61,0.15);" text="🕘" textAlignment="CENTER" textFill="#c79230af">
+               <font>
+                  <Font name="Georgia" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="24.0" prefHeight="25.0" prefWidth="182.0" style="-fx-alignment: center;" text="Geçmiş Randevularım" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="sonRandevuHizmetLabel" layoutX="82.0" layoutY="59.0" prefHeight="19.0" prefWidth="163.0" text="Cilt Bakımı" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Label>
+            <HBox layoutX="38.0" layoutY="111.0" prefHeight="18.0" prefWidth="217.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="25.0" style="-fx-alignment: center;" text="📅" textAlignment="CENTER" textFill="#613421ab">
+                     <font>
+                        <Font name="Georgia" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sonRandevuTarihLabel" prefHeight="17.0" prefWidth="119.0" style="-fx-alignment: center;" text="8 temmuz 2026" textAlignment="CENTER" textFill="#613421ab">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="35.0" prefWidth="27.0">
+                     <children>
+                        <Label prefHeight="19.0" prefWidth="25.0" style="-fx-alignment: center;" text="🕒" textAlignment="CENTER" textFill="#613421ab">
+                           <font>
+                              <Font name="Georgia" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="sonRandevuSaatLabel" prefHeight="18.0" prefWidth="43.0" style="-fx-alignment: center;" text=" 10:45" textAlignment="CENTER" textFill="#613421ab">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Line endX="13.0" layoutX="250.0" layoutY="51.0" startX="-168.0" stroke="#b8852e" />
+            <Label layoutX="82.0" layoutY="84.0" prefHeight="19.0" prefWidth="58.0" text="Uzman:" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="sonRandevuUzmanLabel" layoutX="140.0" layoutY="84.0" prefHeight="19.0" prefWidth="130.0" text="..." textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="tumRandevularButton" layoutX="31.0" layoutY="140.0" mnemonicParsing="false" onAction="#randevularimiAc" prefHeight="35.0" prefWidth="230.0" style="-fx-background-color: transparent; -fx-background-radius: 14; -fx-border-radius: 14; -fx-border-color: #d9a33d;" text="Tüm Randevularım  &gt;" textFill="#9a6518">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="960.0" layoutY="20.0" prefHeight="67.0" prefWidth="302.0">
+         <children>
+            <Line endX="119.0" layoutX="183.0" layoutY="53.0" startX="-168.0" stroke="#b8852e" />
+            <Label layoutX="22.0" layoutY="22.0" prefHeight="24.0" prefWidth="25.0" style="-fx-alignment: center;" text="📅" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Georgia" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="tarihLabel" layoutX="47.0" layoutY="22.0" prefHeight="25.0" prefWidth="130.0" style="-fx-alignment: center;" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="188.0" layoutY="23.0" prefHeight="24.0" prefWidth="25.0" style="-fx-alignment: center;" text="🕒" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Georgia" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="saatlabel" layoutX="213.0" layoutY="23.0" prefHeight="25.0" prefWidth="90.0" style="-fx-alignment: center;" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

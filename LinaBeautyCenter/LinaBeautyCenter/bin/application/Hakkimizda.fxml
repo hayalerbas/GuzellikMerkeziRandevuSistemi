@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HakkimizdaController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0">
+         <image>
+            <Image url="@img/arkaplanbos.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="264.0" fitWidth="439.0" layoutX="640.0" layoutY="148.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/Hakkımızda%20%20fotoğraf.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="170.0" layoutY="170.0" text="Hakkımızda" textFill="#2d1b12">
+         <font>
+            <Font name="Georgia Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="190.0" layoutY="226.0" text="Güzelliğinize değer katıyoruz." textFill="#c89b45">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="25.0" fitWidth="387.0" layoutX="157.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/çizgisüs.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="130.0" layoutY="272.0" prefHeight="75.0" prefWidth="420.0" text="Lina Beauty Center, güzelliğinizi ön plana çıkarmak ve kendinizi özel hissetmenizi sağlamak için kurulmuştur. Alanında uzman ekibimiz ve son teknoloji cihazlarımız ile sizlere en kaliteli hizmeti sunmayı hedefliyoruz." textFill="#4b3427" wrapText="true">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="193.0" layoutY="360.0" mnemonicParsing="false" onAction="#dahaFazlaKesfet" prefHeight="44.0" prefWidth="230.0" style="-fx-background-color: linear-gradient(to right,#d4a24c,#b8842f); -fx-background-radius: 40; -fx-cursor: hand; -fx-text-fill: white;" text="Daha Fazla Keşfet     &gt;">
+         <font>
+            <Font name="Georgia" size="20.0" />
+         </font>
+      </Button>
+      <Pane layoutX="37.0" layoutY="425.0" prefHeight="170.0" prefWidth="1140.0" style="-fx-background-color: rgba(255,248,240,0.70); -fx-border-color: rgba(180,150,120,0.45); -fx-background-radius: 35; -fx-border-width: 1; -fx-border-radius: 35;">
+         <children>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="220.0">
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="82.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/Hakkimizda%20Uzmanekiplogo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="53.0" layoutY="75.0" text="Uzman Ekip" textFill="#2d1b12">
+                     <font>
+                        <Font name="Georgia Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="96.0" prefHeight="36.0" prefWidth="179.0" text="Alanında deneyimli ve sertifikalı uzman kadromuzla hizmetinizdeyiz." textAlignment="CENTER" textFill="#5a4636" wrapText="true">
+                     <font>
+                        <Font name="Georgia" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="460.0" layoutY="10.0" prefHeight="150.0" prefWidth="220.0">
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="82.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/Hakkımızda%20teknolojilogo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="45.0" layoutY="75.0" text="Son Teknoloji" textFill="#2d1b12">
+                     <font>
+                        <Font name="Georgia Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="101.0" prefHeight="36.0" prefWidth="179.0" text="Gelişmiş cihazlarımızla profesyonel sonuçlar hedefliyoruz." textAlignment="CENTER" textFill="#5a4636" wrapText="true">
+                     <font>
+                        <Font name="Georgia" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="235.0" layoutY="10.0" prefHeight="150.0" prefWidth="220.0">
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="82.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/Hakkımızda%20kaliteli%20hizmet%20logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="40.0" layoutY="75.0" text="Kaliteli Hizmet" textFill="#2d1b12">
+                     <font>
+                        <Font name="Georgia Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="100.0" prefHeight="36.0" prefWidth="179.0" text="Hijyenik ve kaliteli ürünlerle güvenli hizmet sunuyoruz." textAlignment="CENTER" textFill="#5a4636" wrapText="true">
+                     <font>
+                        <Font name="Georgia" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="685.0" layoutY="10.0" prefHeight="150.0" prefWidth="220.0">
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="82.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/Hakkımızda%20%20memnuniyet%20log.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="9.0" layoutY="75.0" text="Müşteri Memnuniyeti" textFill="#2d1b12">
+                     <font>
+                        <Font name="Georgia Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="16.0" layoutY="98.0" prefHeight="36.0" prefWidth="179.0" text="Sizin mutluluğunuz bizim en büyük önceliğimizdir." textAlignment="CENTER" textFill="#5a4636" wrapText="true">
+                     <font>
+                        <Font name="Georgia" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="910.0" layoutY="10.0" prefHeight="150.0" prefWidth="220.0">
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="82.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/Hakkımızda%20kişiyeözel%20logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="12.0" layoutY="75.0" text="Kişiye Özel Çözümler" textFill="#2d1b12">
+                     <font>
+                        <Font name="Georgia Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="100.0" prefHeight="36.0" prefWidth="179.0" text="İhtiyaçlarınıza özel bakım programları oluşturuyoruz." textAlignment="CENTER" textFill="#5a4636" wrapText="true">
+                     <font>
+                        <Font name="Georgia" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Line endY="140.0" layoutX="234.0" layoutY="15.0" startY="20.0" style="-fx-stroke: rgba(180,150,120,0.28); -fx-stroke-width: 1;" />
+            <Line endY="140.0" layoutX="459.0" layoutY="15.0" startY="20.0" style="-fx-stroke: rgba(180,150,120,0.28); -fx-stroke-width: 1;" />
+            <Line endY="140.0" layoutX="682.0" layoutY="15.0" startY="20.0" style="-fx-stroke: rgba(180,150,120,0.28); -fx-stroke-width: 1;" />
+            <Line endY="140.0" layoutX="910.0" layoutY="15.0" startY="20.0" style="-fx-stroke: rgba(180,150,120,0.28); -fx-stroke-width: 1;" />
+         </children>
+      </Pane>
+      <Pane layoutX="47.0" layoutY="604.0" prefHeight="95.0" prefWidth="1120.0" style="-fx-background-color: rgba(255,248,240,0.70); -fx-border-color: rgba(180,150,120,0.45); -fx-background-radius: 28; -fx-border-width: 1; -fx-border-radius: 28;">
+         <children>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="80.0" prefWidth="260.0">
+               <children>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="20.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/Hakkımızda%20%20mutlumüşterilogo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="80.0" layoutY="8.0" text="5.000+" textFill="#c89b45">
+                     <font>
+                        <Font name="Georgia Bold" size="34.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="82.0" layoutY="48.0" text="Mutlu Müşteri" textFill="#3f2b20">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="285.0" layoutY="10.0" prefHeight="80.0" prefWidth="260.0">
+               <children>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="20.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/Hakkımızda%20kaliteli%20hizmet%20logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="80.0" layoutY="8.0" text="10+" textFill="#c89b45">
+                     <font>
+                        <Font name="Georgia Bold" size="34.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="82.0" layoutY="48.0" text="Yıllık Deneyim" textFill="#3f2b20">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="560.0" layoutY="10.0" prefHeight="80.0" prefWidth="260.0">
+               <children>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="20.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/Hakkımızda%20kişiyeözel%20logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="80.0" layoutY="8.0" text="20+" textFill="#c89b45">
+                     <font>
+                        <Font name="Georgia Bold" size="34.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="82.0" layoutY="48.0" text="Uzman Personel" textFill="#3f2b20">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="835.0" layoutY="10.0" prefHeight="80.0" prefWidth="260.0">
+               <children>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="20.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/Hakkımızda%20konumlogo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="80.0" layoutY="8.0" text="2" textFill="#c89b45">
+                     <font>
+                        <Font name="Georgia Bold" size="34.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="82.0" layoutY="48.0" text="Şube" textFill="#3f2b20">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Line endY="90.0" layoutX="836.0" layoutY="-3.0" startY="20.0" style="-fx-stroke: rgba(180,150,120,0.28); -fx-stroke-width: 1;" />
+            <Line endY="90.0" layoutX="560.0" layoutY="-3.0" startY="20.0" style="-fx-stroke: rgba(180,150,120,0.28); -fx-stroke-width: 1;" />
+            <Line endY="90.0" layoutX="270.0" layoutY="-3.0" startY="20.0" style="-fx-stroke: rgba(180,150,120,0.28); -fx-stroke-width: 1;" />
+         </children>
+      </Pane>
+      <HBox layoutX="15.0" layoutY="10.0" prefHeight="117.0" prefWidth="1250.0" style="-fx-background-color: rgba(255,255,255,0.75); -fx-padding: 20; -fx-alignment: CENTER_LEFT; -fx-border-radius: 20; -fx-border-color: #d8b06a; -fx-background-radius: 20;">
+         <children>
+            <ImageView fitHeight="95.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/linalogo2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="9.0" fitWidth="11.0" pickOnBounds="true" preserveRatio="true" />
+            <Separator layoutX="245.0" layoutY="31.0" orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openAnaSayfa" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text=" AnaSayfa" />
+            <Separator orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openRandevu" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="Randevu " />
+            <Separator orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openIletisim" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="İletişim" />
+            <Separator orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openFiyat" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="Fiyat" />
+            <Separator layoutX="499.0" layoutY="31.0" orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openIslemler" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="İşlemler" />
+            <Separator layoutX="498.0" layoutY="31.0" orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openKampanyalar" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="Kampanyalar" />
+            <Separator layoutX="501.0" layoutY="31.0" orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openCiltTesti" prefHeight="55.0" prefWidth="120.0" styleClass="menu-button" stylesheets="@application.css" text="Cilt Testi" textAlignment="CENTER" />
+            <Separator layoutX="504.0" layoutY="31.0" orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openSSS" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="SSS" />
+            <Separator orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openHakkimizda" prefHeight="55.0" prefWidth="120.0" styleClass="menu-button" stylesheets="@application.css" text="Hakkımızda" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

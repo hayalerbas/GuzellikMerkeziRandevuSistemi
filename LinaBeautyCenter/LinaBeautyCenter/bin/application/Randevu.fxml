@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RandevuController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" layoutX="1.0">
+         <image>
+            <Image url="@img/Randevuarkaplan.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="48.0" layoutY="146.0" prefHeight="570.0" prefWidth="600.0" style="-fx-background-color: rgba(255,255,255,0.65); -fx-border-radius: 35; -fx-background-radius: 35; -fx-border-color: #e7c58d;">
+         <children>
+            <Label layoutX="125.0" layoutY="14.0" style="-fx-font-size: 40px; -fx-font-family: &quot;Georgia&quot;; -fx-font-weight: bold;" text="Randevu Oluştur" textFill="#3d2415" />
+            <Label layoutX="144.0" layoutY="90.0" prefHeight="25.0" prefWidth="323.0" text="Size uygun hizmeti seçerek randevunuzu kolayca oluşturun.">
+               <font>
+                  <Font name="Georgia" size="12.0" />
+               </font>
+            </Label>
+            <HBox layoutX="55.0" layoutY="130.0" prefHeight="48.0" prefWidth="189.0">
+               <children>
+                  <StackPane prefHeight="38.0" prefWidth="38.0">
+                     <children>
+                        <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="22.0" layoutY="22.0">
+                           <image>
+                              <Image url="@img/RandevuHizmetlogo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <ImageView fitHeight="20.0" fitWidth="5.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label prefHeight="48.0" prefWidth="145.0" text="Hizmet Seçimi" textFill="#3d2415">
+                     <font>
+                        <Font name="Georgia" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="55.0" layoutY="185.0" prefHeight="48.0" prefWidth="500.0">
+               <children>
+                  <StackPane prefHeight="38.0" prefWidth="38.0">
+                     <children>
+                        <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="22.0" layoutY="22.0">
+                           <image>
+                              <Image url="@img/RandevuUzmanlogo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <ImageView fitHeight="20.0" fitWidth="5.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label prefHeight="48.0" prefWidth="145.0" text="Uzman Seçimi" textFill="#3d2415">
+                     <font>
+                        <Font name="Georgia" size="16.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="uzmanCombo" prefHeight="50.0" prefWidth="311.0" promptText="Uzman Seçimi" style="-fx-background-color: rgba(255,255,255,0.85); -fx-border-radius: 14; -fx-font-family: &quot;Georgia&quot;; -fx-background-radius: 14; -fx-border-color: #e0bd82; -fx-text-fill: #4d3425; -fx-font-size: 14px;" />
+               </children>
+            </HBox>
+            <HBox layoutX="55.0" layoutY="240.0" prefHeight="48.0" prefWidth="500.0">
+               <children>
+                  <StackPane prefHeight="38.0" prefWidth="38.0">
+                     <children>
+                        <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="22.0" layoutY="22.0">
+                           <image>
+                              <Image url="@img/RandevuTarihLogo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <ImageView fitHeight="20.0" fitWidth="5.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label prefHeight="48.0" prefWidth="145.0" text="Tarih Seçimi" textFill="#3d2415">
+                     <font>
+                        <Font name="Georgia" size="16.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="tarihPicker" prefHeight="50.0" prefWidth="311.0" promptText="Tarih Seçiniz" style="-fx-background-color: white; -fx-border-width: 1; -fx-border-color: #e0bd82; -fx-text-fill: #4d3425; -fx-font-family: &quot;Georgia&quot;; -fx-font-size: 14px;" />
+               </children>
+            </HBox>
+            <HBox layoutX="55.0" layoutY="295.0" prefHeight="48.0" prefWidth="189.0">
+               <children>
+                  <StackPane prefHeight="38.0" prefWidth="38.0">
+                     <children>
+                        <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="22.0" layoutY="22.0">
+                           <image>
+                              <Image url="@img/RandevuSaatlogo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <ImageView fitHeight="20.0" fitWidth="5.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label prefHeight="48.0" prefWidth="145.0" text="Saat Seçimi" textFill="#3d2415">
+                     <font>
+                        <Font name="Georgia" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="55.0" layoutY="350.0" prefHeight="48.0" prefWidth="500.0">
+               <children>
+                  <StackPane prefHeight="38.0" prefWidth="38.0">
+                     <children>
+                        <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="22.0" layoutY="22.0">
+                           <image>
+                              <Image url="@img/RandevuAdSoyadlgo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <ImageView fitHeight="20.0" fitWidth="5.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label prefHeight="48.0" prefWidth="145.0" text="Ad Soyad" textFill="#3d2415">
+                     <font>
+                        <Font name="Georgia" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="adSoyadField" prefHeight="50.0" prefWidth="311.0" promptText="Adınız Ve Soyadınız" style="-fx-background-color: rgba(255,255,255,0.85); -fx-border-radius: 14; -fx-font-size: 14px; -fx-font-family: &quot;Georgia&quot;; -fx-border-color: #e0bd82; -fx-background-radius: 14;">
+                     <font>
+                        <Font name="Georgia" size="12.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="55.0" layoutY="405.0" prefHeight="48.0" prefWidth="500.0">
+               <children>
+                  <StackPane prefHeight="38.0" prefWidth="38.0">
+                     <children>
+                        <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="22.0" layoutY="22.0">
+                           <image>
+                              <Image url="@img/Randevuİletişimlogo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <ImageView fitHeight="20.0" fitWidth="5.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label prefHeight="48.0" prefWidth="145.0" text="Telefon Numarası" textFill="#3d2415">
+                     <font>
+                        <Font name="Georgia" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="telefonField" prefHeight="50.0" prefWidth="311.0" promptText="5XX XXX XX XX" style="-fx-background-color: rgba(255,255,255,0.85); -fx-background-radius: 14; -fx-font-size: 14px; -fx-border-color: #e0bd82; -fx-border-radius: 14;">
+                     <font>
+                        <Font name="Georgia" size="12.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="55.0" layoutY="460.0" prefHeight="48.0" prefWidth="500.0">
+               <children>
+                  <StackPane prefHeight="38.0" prefWidth="38.0">
+                     <children>
+                        <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="22.0" layoutY="22.0">
+                           <image>
+                              <Image url="@img/Randevunotunuzlogo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <ImageView fitHeight="20.0" fitWidth="5.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label prefHeight="48.0" prefWidth="145.0" text="Notunuz" textFill="#3d2415">
+                     <font>
+                        <Font name="Georgia" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="notArea" prefHeight="90.0" prefWidth="311.0" promptText="Eklemek istediğiniz not varsa yazabilirsiniz..." style="-fx-background-color: white; -fx-border-color: #e0bd82; -fx-border-width: 1;" wrapText="true" />
+               </children>
+            </HBox>
+            <ImageView fitHeight="44.0" fitWidth="358.0" layoutX="126.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/çizgisüs.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="176.0" layoutY="521.0" mnemonicParsing="false" onAction="#randevuOlustur" prefHeight="35.0" prefWidth="260.0" style="-fx-background-color: linear-gradient(to right,#d7a447,#c98b2e); -fx-background-radius: 30; -fx-border-color: #e0bd82; -fx-border-radius: 30; -fx-text-fill: white;" text="Randevuyu Oluştur">
+               <font>
+                  <Font name="Georgia Bold" size="14.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="hizmetCombo" layoutX="244.0" layoutY="130.0" prefHeight="50.0" prefWidth="311.0" promptText="Hizmet seçiniz" style="-fx-background-color: rgba(255,255,255,0.85); -fx-border-radius: 14; -fx-font-family: &quot;Georgia&quot;; -fx-background-radius: 14; -fx-border-color: #e0bd82; -fx-text-fill: #4d3425; -fx-font-size: 14px;" />
+            <ComboBox fx:id="saatCombo" layoutX="244.0" layoutY="295.0" prefHeight="50.0" prefWidth="311.0" promptText="Saat seçiniz" style="-fx-background-color: rgba(255,255,255,0.85); -fx-border-radius: 14; -fx-font-family: &quot;Georgia&quot;; -fx-background-radius: 14; -fx-border-color: #e0bd82; -fx-text-fill: #4d3425; -fx-font-size: 14px;" />
+         </children>
+      </Pane>
+      <HBox layoutX="15.0" layoutY="10.0" prefHeight="117.0" prefWidth="1250.0" style="-fx-background-color: rgba(255,255,255,0.75); -fx-padding: 20; -fx-alignment: CENTER_LEFT; -fx-border-radius: 20; -fx-border-color: #d8b06a; -fx-background-radius: 20;">
+         <children>
+            <ImageView fitHeight="95.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/linalogo2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="9.0" fitWidth="11.0" pickOnBounds="true" preserveRatio="true" />
+            <Separator layoutX="245.0" layoutY="31.0" orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openAnaSayfa" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text=" AnaSayfa" />
+            <Separator orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openRandevu" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="Randevu " />
+            <Separator orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openIletisim" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="İletişim" />
+            <Separator orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openFiyat" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="Fiyat" />
+            <Separator layoutX="499.0" layoutY="31.0" orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openIslemler" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="İşlemler" />
+            <Separator layoutX="498.0" layoutY="31.0" orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openKampanyalar" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="Kampanyalar" />
+            <Separator layoutX="501.0" layoutY="31.0" orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openCiltTesti" prefHeight="55.0" prefWidth="120.0" styleClass="menu-button" stylesheets="@application.css" text="Cilt Testi" textAlignment="CENTER" />
+            <Separator layoutX="504.0" layoutY="31.0" orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openSSS" prefHeight="55.0" prefWidth="125.0" styleClass="menu-button" stylesheets="@application.css" text="SSS" />
+            <Separator orientation="VERTICAL" prefHeight="55.0" />
+            <Button mnemonicParsing="false" onAction="#openHakkimizda" prefHeight="55.0" prefWidth="120.0" styleClass="menu-button" stylesheets="@application.css" text="Hakkımızda" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

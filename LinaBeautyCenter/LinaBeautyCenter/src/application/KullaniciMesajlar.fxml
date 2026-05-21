@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.KullaniciMesajlarController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0">
+         <image>
+            <Image url="@img/Adminpanel.PNG" />
+         </image>
+      </ImageView>
+      <Pane layoutX="280.0" layoutY="20.0" prefHeight="79.0" prefWidth="623.0">
+         <children>
+            <Label layoutX="23.0" layoutY="13.0" prefHeight="45.0" prefWidth="227.0" text="Mesajlarım" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Georgia" size="36.0" />
+               </font>
+            </Label>
+            <Line endX="-100.0" endY="65.0" layoutX="114.0" layoutY="8.0" startX="-100.0" startY="5.0" stroke="#b8852e" />
+            <Label layoutX="23.0" layoutY="49.0" prefHeight="25.0" prefWidth="590.0" text="Bizimle İletişime Geçebilirsiniz." textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="mesajAnaPane" layoutX="266.0" layoutY="123.0" prefHeight="570.0" prefWidth="1000.0" style="-fx-background-color: rgba(255,255,255,0.85); -fx-border-color: #f1e2cb; -fx-border-width: 3;">
+         <children>
+            <Pane fx:id="sohbetPane" layoutX="303.0" prefHeight="570.0" prefWidth="697.0" style="-fx-background-color: rgba(255,255,255,0.20); -fx-border-color: #f1e2cb; -fx-border-width: 2;">
+               <children>
+                  <Label fx:id="sohbetBaslikLabel" layoutX="15.0" layoutY="24.0" prefHeight="27.0" prefWidth="185.0" style="-fx-font-size: 18px;                       -fx-font-weight: bold;                       -fx-text-fill: #2d1b12;" text="Lina Beauty Center" />
+                  <Label fx:id="emailLabel" layoutX="15.0" layoutY="56.0" prefHeight="19.0" prefWidth="200.0" style="-fx-font-size: 13px;                       -fx-text-fill: #7a5c49;" text="linabeautygelisim@gmail.com" />
+                  <Button fx:id="silButton" layoutX="613.0" layoutY="32.0" onAction="#mesajiSil" prefHeight="38.0" prefWidth="70.0" style="-fx-background-color: transparent;                        -fx-border-color: #ffb9b9;                        -fx-border-radius: 12;                        -fx-background-radius: 12;                        -fx-text-fill: #d84b4b;                        -fx-font-weight: bold;" text="🗑 Sil" />
+                  <TextArea fx:id="mesajYazArea" layoutX="25.0" layoutY="488.0" prefHeight="55.0" prefWidth="549.0" promptText="Mesajınızı yazın..." style="-fx-border-color: #ead8bd;" />
+                  <Button fx:id="gonderButton" layoutX="593.0" layoutY="493.0" onAction="#mesajGonder" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: linear-gradient(to right, #d9a33d, #b77a18);                        -fx-background-radius: 14;                        -fx-text-fill: white;                        -fx-font-size: 14px;                        -fx-font-weight: bold;" text=" Gönder" />
+                  <ScrollPane fx:id="mesajScrollPane" fitToWidth="true" layoutY="100.0" prefHeight="360.0" prefWidth="697.0" style="-fx-background-color: transparent; -fx-background: transparent; -fx-border-color: #f1e2cb;">
+                     <content>
+                        <VBox fx:id="mesajlarVBox" prefWidth="360.0" spacing="15.0" style="-fx-background-color: transparent;">
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <children>
+                              <HBox fx:id="musteriMesajHBox" alignment="CENTER_RIGHT">
+                                 <children>
+                                    <Label fx:id="musteriMesajLabel" maxWidth="250.0" style="-fx-background-color: #eef6ea;                                           -fx-background-radius: 18;                                           -fx-padding: 12;                                           -fx-font-size: 14px;                                           -fx-text-fill: #2d1b12;" text="Merhaba, cilt bakımı hizmetleriniz hakkında detaylı bilgi alabilir miyim?" wrapText="true" />
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="adminMesajHBox" alignment="CENTER_LEFT">
+                                 <children>
+                                    <Label fx:id="adminMesajLabel" maxWidth="250.0" style="-fx-background-color: #f8efe5;                                           -fx-background-radius: 18;                                           -fx-padding: 12;                                           -fx-font-size: 14px;                                           -fx-text-fill: #2d1b12;" text="Merhaba Ayşe Hanım, tabii ki. Size yardımcı olabiliriz." wrapText="true" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </Pane>
+            <Pane fx:id="sohbetListePane" prefHeight="570.0" prefWidth="304.0" style="-fx-background-color: rgba(255,255,255,0.20); -fx-border-color: #f1e2cb; -fx-border-width: 2;">
+               <children>
+                  <Pane fx:id="linaSohbetPane" layoutX="15.0" layoutY="15.0" onMouseClicked="#sohbetAc" prefHeight="80.0" prefWidth="280.0" style="-fx-background-color: rgba(245,235,220,0.85);                      -fx-background-radius: 16;">
+                     <children>
+                        <Label fx:id="sohbetAdLabel" layoutX="14.0" layoutY="16.0" style="-fx-font-size: 15px;                           -fx-font-weight: bold;                           -fx-text-fill: #2d1b12;" text="Lina Beauty Center" />
+                        <Label fx:id="sonMesajLabel" layoutX="14.0" layoutY="46.0" style="-fx-font-size: 13px;                           -fx-text-fill: #7a5c49;" text="Mesajınız cevaplandı..." />
+                        <Label fx:id="mesajSaatLabel" layoutX="220.0" layoutY="18.0" style="-fx-font-size: 12px;                           -fx-font-weight: bold;                           -fx-text-fill: #b77a18;" text="10:43" />
+                        <Circle fx:id="okunmadiCircle" centerX="248.0" centerY="55.0" radius="4.0" style="-fx-fill: #d9a33d;" />
+                     </children>
+                  </Pane>
+                  <Button fx:id="yenileButton" layoutX="50.0" layoutY="490.0" onAction="#mesajlariYenile" prefHeight="42.0" prefWidth="200.0" style="-fx-background-color: transparent;                        -fx-border-color: #d9a33d;                        -fx-border-radius: 14;                        -fx-background-radius: 14;                        -fx-text-fill: #9a6518;                        -fx-font-weight: bold;" text="↻ Yenile" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="20.0" layoutY="20.0" prefHeight="558.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="anaSayfaButton" layoutY="200.0" mnemonicParsing="false" onAction="#panelimGoster" prefHeight="25.0" prefWidth="200.0" style="-fx-font-family: &quot;Segoe UI&quot;; -fx-alignment: CENTER_LEFT; -fx-cursor: hand; -fx-font-size: 17px; -fx-padding: 0 0 0 28; -fx-background-color: transparent;" text="🏠  Ana sayfa" textFill="#633521aa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="randevuAlMenuButton" layoutY="240.0" mnemonicParsing="false" onAction="#randevuAlAc" prefHeight="25.0" prefWidth="200.0" style="-fx-font-family: &quot;Segoe UI&quot;; -fx-alignment: CENTER_LEFT; -fx-cursor: hand; -fx-font-size: 17px; -fx-padding: 0 0 0 28; -fx-background-color: transparent;" text="📅  Randevu Al" textFill="#633521aa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="randevularimMenuButton" layoutY="280.0" mnemonicParsing="false" onAction="#randevularimiAc" prefHeight="25.0" prefWidth="200.0" style="-fx-font-family: &quot;Segoe UI&quot;; -fx-alignment: CENTER_LEFT; -fx-cursor: hand; -fx-font-size: 17px; -fx-padding: 0 0 0 28; -fx-background-color: transparent;" text="🕒  Randevularım" textFill="#633521aa" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="profilMenuButton" layoutY="320.0" mnemonicParsing="false" onAction="#profilBilgileriAc" prefHeight="25.0" prefWidth="200.0" style="-fx-font-family: &quot;Segoe UI&quot;; -fx-alignment: CENTER_LEFT; -fx-cursor: hand; -fx-font-size: 17px; -fx-padding: 0 0 0 28; -fx-background-color: transparent;" text="👤  Profil Bilgileri" textFill="#633521aa" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="cikisButton" layoutY="400.0" mnemonicParsing="false" onAction="#cikisYap" prefHeight="25.0" prefWidth="200.0" style="-fx-font-family: &quot;Segoe UI&quot;; -fx-alignment: CENTER_LEFT; -fx-cursor: hand; -fx-font-size: 17px; -fx-padding: 0 0 0 28; -fx-background-color: transparent;" text="↩  Çıkış Yap" textFill="#633521aa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/linalogo2.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="-10.0" layoutY="118.0" prefHeight="35.0" prefWidth="200.0" style="-fx-alignment: center;" text="LINA" textAlignment="CENTER" textFill="#b8852e">
+               <font>
+                  <Font name="Georgia Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="-2.0" layoutY="153.0" prefHeight="23.0" prefWidth="185.0" style="-fx-alignment: center;" text="BEAUTY CENTER" textAlignment="CENTER" textFill="#b8852e">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="mesajlarButton" layoutY="360.0" mnemonicParsing="false" onAction="#mesajlarGoster" prefHeight="22.0" prefWidth="200.0" style="-fx-font-family: &quot;Segoe UI&quot;; -fx-alignment: CENTER_LEFT; -fx-cursor: hand; -fx-font-size: 17px; -fx-padding: 0 0 0 28; -fx-background-color: transparent;" text="✉  Mesajlar" textFill="#633521aa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="960.0" layoutY="20.0" prefHeight="67.0" prefWidth="302.0">
+         <children>
+            <Line endX="119.0" layoutX="183.0" layoutY="53.0" startX="-168.0" stroke="#b8852e" />
+            <Label layoutX="22.0" layoutY="22.0" prefHeight="24.0" prefWidth="25.0" style="-fx-alignment: center;" text="📅" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Georgia" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="takvimlabel" layoutX="47.0" layoutY="22.0" prefHeight="25.0" prefWidth="130.0" style="-fx-alignment: center;" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="188.0" layoutY="23.0" prefHeight="24.0" prefWidth="25.0" style="-fx-alignment: center;" text="🕒" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Georgia" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="saatlabel" layoutX="213.0" layoutY="23.0" prefHeight="25.0" prefWidth="90.0" style="-fx-alignment: center;" textAlignment="CENTER" textFill="#613421ab">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
